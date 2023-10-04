@@ -38,5 +38,5 @@ prompt_templates:
     Assistant: 
 files:
 - filename: "llama-2-70b-chat.Q4_K_M.gguf"
-  sha256: "c7e817ae9c84191ccfc57141e839cb1b1cb61822cd299e76d02ec49fd6fa3c3e"
+  sha256: "79af58198efeb0c3a6c66823fb7901c81fd0a32a9969a0bbc8bc92c84e0c3372"
   uri: "https://huggingface.co/TheBloke/Llama-2-70B-chat-GGUF/blob/main/llama-2-70b-chat.Q4_K_M.gguf"
