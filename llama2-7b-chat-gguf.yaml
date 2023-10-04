@@ -1,16 +1,16 @@
-name: "llama2-7b-chat-gguf"
+name: "llama2-70b-chat-gguf"
 
 description: |
-  Llama 2 7b chat in gguf format.
+  Llama 2 70b chat in gguf format.
   Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters.. 
 
 license: "https://ai.meta.com/llama/license/"
 urls:
 - https://ai.meta.com/llama/
-- https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF
+- https://huggingface.co/TheBloke/Llama-2-70b-Chat-GGUF
 
 config_file: |
-  name: llama2-7b-chat-gguf
+  name: llama2-70b-chat-gguf
   backend: "llama"
   parameters:
     top_k: 80
@@ -24,11 +24,11 @@ config_file: |
     user: 'User:'
     system: 'System:'
   template:
-    chat_message: llama2-7b-chat-gguf-chat
+    chat_message: llama2-70b-chat-gguf-chat
   system_prompt: "You are a helpful assistant, below is a conversation, please respond with the next message and do not ask follow-up questions"
 
 prompt_templates:
-- name: "llama2-7b-chat-gguf-chat"
+- name: "llama2-70b-chat-gguf-chat"
   content: |
     [INST]
     {{if .SystemPrompt}}<<SYS>>{{.SystemPrompt}}<</SYS>>{{end}}
@@ -37,6 +37,6 @@ prompt_templates:
 
     Assistant: 
 files:
-- filename: "llama-2-7b-chat.Q4_K_M.gguf"
+- filename: "llama-2-70b-chat.Q4_K_M.gguf"
   sha256: "08a5566d61d7cb6b420c3e4387a39e0078e1f2fe5f055f3a03887385304d4bfa"
-  uri: "https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf"
+  uri: "https://huggingface.co/TheBloke/Llama-2-70B-chat-GGUF/blob/main/llama-2-70b-chat.Q4_K_M.gguf"
