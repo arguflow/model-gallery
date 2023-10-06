@@ -29,7 +29,7 @@ config_file: |
 
 prompt_templates:
 - name: "llama2-70b-chat-gguf-chat"
-  content: content: |
+  content: |
     {{if eq .RoleName "assistant"}}{{.Content}}{{else}}
     [INST]
     {{if eq .RoleName "system"}}<<SYS>>{{.Content}}<</SYS>>{{else if and (.SystemPrompt) (eq .MessageIndex 0)}}<<SYS>>{{.SystemPrompt}}<</SYS>>{{end}}
